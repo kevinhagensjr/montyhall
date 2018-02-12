@@ -11,7 +11,7 @@ class MontyHall{
 
   start(){
 
-    for(let i=0; i < this.trialCount; i++){
+    for(let i=0; i < this.trialCount; i++){ //play game x number of times
 
       let doors = [0,0,0]; //number of doors for selection 0 = donkey, 1 = car
       doors[Math.floor(Math.random() * doors.length)] = 1; //put winning car in position
@@ -28,7 +28,7 @@ class MontyHall{
       this.stayWinCount += doors[selection]; //add to stay win count
     }
 
-  this.print();
+    this.print(); //log results
   }
 
   print(){
